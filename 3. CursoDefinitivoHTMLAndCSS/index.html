@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/mainCSS.css">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
         <h1>Lista de compras</h1>
     </header>
     <main>
-        <section>
+        <section id="lista_de_compras">
             <ul>
                 <li>
                     <h2>Carnes</h2>
@@ -26,7 +27,7 @@
                         </a>
                         <figure>
                             <img src="./assets/images/carneRoja.jpg" alt="" width="75px">
-                            <figcaption>Es una imagen de carne roja para la dieta</figcaption>
+                            <!-- <figcaption>Es una imagen de carne roja para la dieta</figcaption> -->
                             <!-- Esta última etiqueta de <figcaption></figcaption>, sirve para dejar una nota de pie en la imagen -->
                         </figure>
                     </li>
@@ -104,7 +105,78 @@
                     </li>
                 </ol>
             </ul>
-            <p>Esta es la compra de la semana</p>
+        </section>
+        <br>
+        <section>
+            <form action="">
+                <label for="hora">
+                    <span>Hora</span>
+                    <input type="time" id="hora" name="hora">
+                </label>
+                <label for="dia">
+                    <span>Día</span>
+                    <input type="date" id="dia" name="dia">
+                </label>
+                <label for="semana">
+                    <span>Semana</span>
+                    <input type="week" id="semana" name="semana">
+                </label>
+                <label for="mes">
+                    <span>Mes</span>
+                    <input type="month" id="mes" name="mes">
+                </label>
+                <input type="submit">
+            </form>
+        </section>
+        <br>
+        <section>
+            <form action="">
+                <label for="calendario">
+                    <span>Calendario</span>
+                    <input type="datetime-local" id="calendario" name="calendario">
+                </label>
+            </form>
+        </section>
+        <br>
+        <section>
+            <h2>Formulario</h2>
+            <!-- nombre, correo, país y CP -->
+            <form action="">
+                <label for="nombre">
+                    <span>Nombre</span>
+                    <input type="text" name="nombre" id="nombre" required autocomplete="name">
+                </label>
+                <label for="correo">
+                    <span>Correo</span>
+                    <input type="email" name="correo" id="correo" required autocomplete="email">
+                </label>
+                <label for="pais">
+                    <span>Pais</span>
+                    <input type="text" name="pais" id="pais" required autocomplete="country-name">
+                </label>
+                <label for="cp">
+                    <span>Código Postal</span>
+                    <input type="number" name="cp" id="cp" required autocomplete="postal-code">
+                </label>
+                <input type="submit">
+            </form>
+        </section>
+        <br>
+        <section>
+            <h2>Botón para seleccionar</h2>
+            <select name="cursos" id="">
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML5">HTML5</option>
+                <option value="CSS3">CSS3</option>
+                <option value="Web Standar">Web Standars</option>
+            </select>
+            <input list="cursos">
+            <datalist id="cursos">
+                <option value="JavaScript"></option>
+                <option value="HTML5"></option>
+                <option value="CSS3"></option>
+                <option value="Web Standar"></option>
+            </datalist>
         </section>
     </main>
 </body>
