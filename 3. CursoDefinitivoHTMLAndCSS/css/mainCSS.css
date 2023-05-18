@@ -88,8 +88,8 @@ img{
     border-radius: 15px;
     display: flex;
     position: relative;
-    justify-content: center;
     align-items: center;
-    top: 20px;
-    left: 40%;
+    justify-content: center;
+    left: 43%;
+    top: 0.5rem;
 }
