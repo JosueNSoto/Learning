@@ -25,9 +25,15 @@ else:
 
 ##Ejemplo 3
 ##Es posible meter un if dentro de otro if, if anidados
-ingreso_mensual = 21000
+ingreso_mensual = 70000
+gasto_mensual = 69000
 if ingreso_mensual >= 30000:
-    print("Estás bien en cualquier parte del mundo")
+    if ingreso_mensual - gasto_mensual < 0:
+        print("gastas más de lo que ganas")
+    elif ingreso_mensual - gasto_mensual > 3000:
+        print("estás bien")
+    else:
+        print("Estás gastando mucho HDTPM")
 elif ingreso_mensual >= 20000:
     print("Estás bien en latam")
 else:
