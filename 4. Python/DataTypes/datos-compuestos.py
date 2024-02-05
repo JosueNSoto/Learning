@@ -26,6 +26,9 @@ print(conjunto)
 
 #Diccionario / dict, just like a list, but unordered
 # "key" : "value"
+"""
+Son como libros mágicos
+"""
 diccionario = {
     "nombre": "jOSUE",
     "apellido": "sOTO",
